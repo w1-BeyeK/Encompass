@@ -1,0 +1,11 @@
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\bin\Debug\netcoreapp2.0\API.deps.json
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\bin\Debug\netcoreapp2.0\API.runtimeconfig.json
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\bin\Debug\netcoreapp2.0\API.runtimeconfig.dev.json
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\bin\Debug\netcoreapp2.0\API.dll
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\bin\Debug\netcoreapp2.0\API.pdb
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\obj\Debug\netcoreapp2.0\API.csprojAssemblyReference.cache
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\obj\Debug\netcoreapp2.0\API.csproj.CoreCompileInputs.cache
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\obj\Debug\netcoreapp2.0\API.AssemblyInfoInputs.cache
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\obj\Debug\netcoreapp2.0\API.AssemblyInfo.cs
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\obj\Debug\netcoreapp2.0\API.dll
+D:\My Documents\Documents\School\Fontys\2018-2019\P2\Proftaak\Encompass\api\SimpleLogin\obj\Debug\netcoreapp2.0\API.pdb
