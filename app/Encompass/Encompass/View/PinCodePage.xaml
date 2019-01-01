@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Encompass.PinCodePage">
+    <ContentPage.Content>
+        <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Spacing="20" Padding="60">
+            <Label Text="Enter your pincode" 
+                   FontSize="Large" FontAttributes="Bold" 
+                   HorizontalTextAlignment="Center"/>
+            <Entry x:Name="pin" Placeholder="Pin" MaxLength="5" IsPassword="True" 
+                   Keyboard="Numeric" HorizontalOptions="FillAndExpand" FontSize="Large" 
+                   HorizontalTextAlignment="Center"/>
+            <Button Text="Confirm" Clicked="OnConfirm"/>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

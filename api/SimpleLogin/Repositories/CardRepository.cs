@@ -17,7 +17,7 @@ namespace API.Repositories
             throw new NotImplementedException();
         }
 
-        public override Card FromFilter(List<KeyValuePair<string, string>> filters)
+        public Card FromFilter(List<KeyValuePair<string, string>> filters)
         {
             throw new NotImplementedException();
         }

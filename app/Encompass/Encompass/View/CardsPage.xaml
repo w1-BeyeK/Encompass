@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Encompass.CardsPage">
+    <ContentPage.Content>
+        <ScrollView>
+            <ListView x:Name="CardListView" RowHeight="100">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Frame HasShadow="true" Margin="5">
+                                <StackLayout>
+                                    <StackLayout Orientation="Horizontal">
+                                        <!--<Image Source="{Binding Name}" />-->
+                                        <Label Text="{Binding Card.Name}" />
+                                    </StackLayout>
+                                    <!--<Image Source="{Binding BittImage}" />-->
+                                </StackLayout>
+                            </Frame>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

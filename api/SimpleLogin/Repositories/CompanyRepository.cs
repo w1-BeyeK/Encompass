@@ -17,7 +17,7 @@ namespace API.Repositories
             throw new NotImplementedException();
         }
 
-        public override Company FromFilter(List<KeyValuePair<string, string>> filters)
+        public Company FromFilter(List<KeyValuePair<string, string>> filters)
         {
             throw new NotImplementedException();
         }

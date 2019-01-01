@@ -1,0 +1,52 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Encompass.View.BalancePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <Style x:Key="infoLabel" TargetType="Label">
+                <Setter Property="FontSize" Value="Medium"/>
+                <Setter Property="TextColor" Value="Black" />
+                <Setter Property="HorizontalTextAlignment" Value="Center"/>
+            </Style>
+        </ResourceDictionary>
+    </ContentPage.Resources>
+
+    <ContentPage.Content>
+        <Grid Padding="20">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="100" />
+                <RowDefinition Height="100" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <AbsoluteLayout Grid.Row="0" Grid.Column="0"
+                HorizontalOptions="Center" 
+                VerticalOptions="Center">
+                <Image Source="card.png"/>
+            </AbsoluteLayout>
+
+            <FlexLayout 
+                Grid.Row="0" Grid.Column="1"
+                Direction="Column">
+                <Label Text="{Binding Card.Company, StringFormat='Bedrijf: {0}'}"
+                       Style="{StaticResource infoLabel}"/>
+                <Label Text="{Binding Card.Name, StringFormat='Categorie: {0}'}"
+                       Style="{StaticResource infoLabel}"/>
+                <Label Text="Datum: 17-04-2016" 
+                       Style="{StaticResource infoLabel}"/>
+                <Label Text="Geldig t/m: 17-04-2018"
+                       Style="{StaticResource infoLabel}"/>
+            </FlexLayout>
+
+            <FlexLayout Grid.Row="1" Grid.ColumnSpan="2"
+                JustifyContent="SpaceBetween"
+                AlignItems="Center">
+                <Label Text="{Binding Amount, StringFormat=' {0} €'}" FontSize="Large"/>
+                <Button Text="Opwaarderen"/> 
+            </FlexLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
