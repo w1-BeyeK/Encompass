@@ -4,6 +4,7 @@
              x:Class="Encompass.LoginPage">
 
     <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Spacing="20" Padding="60">
+        <Image Source="icon.png"/>
         <Label Text="ENCOMPASS" FontSize="Large" FontAttributes="Bold"/>
         <Entry x:Name="username" Placeholder="Username" HorizontalOptions="FillAndExpand"/>
         <Entry x:Name="password" Placeholder="Password" IsPassword="True" HorizontalOptions="FillAndExpand"/>

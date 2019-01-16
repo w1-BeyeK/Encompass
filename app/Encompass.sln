@@ -5,7 +5,9 @@ VisualStudioVersion = 15.0.28307.106
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encompass.Android", "Encompass\Encompass.Android\Encompass.Android.csproj", "{96740D47-BED5-488C-B960-3D66DD315AB1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Encompass", "Encompass\Encompass\Encompass.csproj", "{F06EAD58-CD56-4E7F-9133-1C8BD409F9BB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Encompass", "Encompass\Encompass\Encompass.csproj", "{F06EAD58-CD56-4E7F-9133-1C8BD409F9BB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EncompassPC", "EncompassPC\EncompassPC.csproj", "{3A708D8A-9486-4A33-BB1B-C55F8D41BFDA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,6 +25,10 @@ Global
 		{F06EAD58-CD56-4E7F-9133-1C8BD409F9BB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F06EAD58-CD56-4E7F-9133-1C8BD409F9BB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F06EAD58-CD56-4E7F-9133-1C8BD409F9BB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3A708D8A-9486-4A33-BB1B-C55F8D41BFDA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3A708D8A-9486-4A33-BB1B-C55F8D41BFDA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3A708D8A-9486-4A33-BB1B-C55F8D41BFDA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3A708D8A-9486-4A33-BB1B-C55F8D41BFDA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

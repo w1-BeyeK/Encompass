@@ -110,15 +110,15 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        [Route("{id}/cards/update")]
+        [Route("{userId}/cards/{cardId}/update")]
         [ProducesResponseType(200)]
         [ProducesResponseType(404)]
         [ProducesResponseType(500)]
-        public IActionResult UpdateCard([FromBody] FilterDTO filters, [FromQuery] int userId)
+        public IActionResult UpdateCard([FromBody] FilterDTO filters, [FromRoute] int userId, [FromRoute] int cardId)
         {
             try
             {
-                return Ok(_service.UpdateCard(filters, userId));
+                return Ok(_service.UpdateCard(filters, cardId, userId));
             }
             catch(Exception ex)
             {

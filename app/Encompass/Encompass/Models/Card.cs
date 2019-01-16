@@ -16,5 +16,7 @@ namespace Encompass.Models
         {
             Name = name;
         }
+
+       
     }
 }

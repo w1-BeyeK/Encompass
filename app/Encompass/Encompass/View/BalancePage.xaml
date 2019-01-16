@@ -25,7 +25,7 @@
             <AbsoluteLayout Grid.Row="0" Grid.Column="0"
                 HorizontalOptions="Center" 
                 VerticalOptions="Center">
-                <Image Source="card.png"/>
+                <Image Source="albert.png"/>
             </AbsoluteLayout>
 
             <FlexLayout 

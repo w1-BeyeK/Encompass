@@ -1,12 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              xmlns:sv="clr-namespace:AiForms.Renderers;assembly=SettingsView"
              x:Class="Encompass.View.SettingsPage">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Options"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
+        <sv:SettingsView HasUnevenRows="true">
+
+            <sv:Section Title="">
+                <sv:LabelCell Title="Naam" ValueText="Kevin Beye" />
+                <sv:LabelCell Title="E-mail" ValueText="kbeye@hotmail.com" />
+                <sv:SwitchCell x:Name="PinSwitch" Title="Pincode" On="False" Tapped="ShowAlert" 
+                                 Description="Turn on if you want to log in using a pincode" />
+                <sv:ButtonCell x:Name="OptionsButton" Title="Export card data" TitleAlignment="Center" Tapped="ExportCardData"/>
+            </sv:Section>
+
+        </sv:SettingsView>
     </ContentPage.Content>
 </ContentPage>

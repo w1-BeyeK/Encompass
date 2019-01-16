@@ -70,14 +70,16 @@ namespace API.Services
             }
         }
 
-        public UpdateDTO<Balance> UpdateCard(FilterDTO filters, int userId)
+        public UpdateDTO<Balance> UpdateCard(FilterDTO filters, int cardId, int userId)
         {
-            if(!(filters.Fields.Any(f => f.Key.ToLower() == _repo.PrimaryKey.ToLower())))
+            if (!filters.Fields.Any(f => f.Key.ToLower() == "hoeveelheid"))
             {
-                throw new MissingFieldException("Missing primary key for update.");
+                throw new MissingFieldException("Missing amount for update.");
             }
 
-            return _srepo.Update(filters, userId);
+            var newBalance = _srepo.Update(filters, cardId, userId);
+
+            return newBalance;
         }
 
         public BaseDTO DeleteCard(FilterDTO filters)

@@ -4,23 +4,43 @@
              x:Class="Encompass.CardsPage">
     <ContentPage.Content>
         <ScrollView>
-            <ListView x:Name="CardListView" RowHeight="100">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            <Frame HasShadow="true" Margin="5">
-                                <StackLayout>
-                                    <StackLayout Orientation="Horizontal">
-                                        <!--<Image Source="{Binding Name}" />-->
-                                        <Label Text="{Binding Card.Name}" />
-                                    </StackLayout>
-                                    <!--<Image Source="{Binding BittImage}" />-->
-                                </StackLayout>
-                            </Frame>
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-            </ListView>
+            
+                <ListView x:Name="CardListView" RowHeight="100">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Frame HasShadow="true" Margin="5">
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="4*" />
+                                            <ColumnDefinition Width="4*" />
+                                            <ColumnDefinition Width="2*" />
+                                        </Grid.ColumnDefinitions>
+
+
+                                        <AbsoluteLayout Grid.Row="0" Grid.Column="0" VerticalOptions="Center">
+                                        <Image HeightRequest="60" Source="albert.png"/>
+                                        </AbsoluteLayout>
+
+                                        <AbsoluteLayout Grid.Row="0" Grid.Column="1" VerticalOptions="Center">
+                                            <Label Text="{Binding Card.Name}" FontSize="Large" TextColor="Black"/>
+                                        </AbsoluteLayout>
+
+                                        <AbsoluteLayout Grid.Row="0" Grid.Column="2" HorizontalOptions="Center" VerticalOptions="Center">
+                                            <Image Source="star.png" IsVisible="{Binding Favorite}"/>
+                                        </AbsoluteLayout>
+                                    </Grid>
+                                </Frame>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+
+                </ListView>
+                
+
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>

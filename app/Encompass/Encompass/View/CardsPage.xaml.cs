@@ -21,13 +21,14 @@ namespace Encompass
 
             Service service = new Service();
             List<Balance> cards = service.GetUserCards(1);
+            cards.OrderBy(c => c.Favorite ? 1 : 0);
 
             CardListView.ItemsSource = cards;
         }
 
         private async void CardListView_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            Balance balance = e.SelectedItem as Balance;
+            Balance balance = (Balance)e.SelectedItem;
 
             if (balance == null)
             {

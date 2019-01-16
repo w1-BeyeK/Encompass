@@ -4,6 +4,8 @@
              x:Class="Encompass.PinCodePage">
     <ContentPage.Content>
         <StackLayout Orientation="Vertical" VerticalOptions="CenterAndExpand" Spacing="20" Padding="60">
+
+            <Image Source="icon.png"/>
             <Label Text="Enter your pincode" 
                    FontSize="Large" FontAttributes="Bold" 
                    HorizontalTextAlignment="Center"/>

@@ -35,10 +35,10 @@ namespace API.Repositories
             throw new NotImplementedException();
         }
 
-        public UpdateDTO<Balance> Update(FilterDTO filters, int user)
+        public UpdateDTO<Balance> Update(FilterDTO filters, int card, int user)
         {
             string pKeyValue = filters.Fields.Where(f => f.Key.ToLower() == PrimaryKey.ToLower()).FirstOrDefault().Value;
-            string where = " where " + PrimaryKey + " = '" + pKeyValue + "' AND UserID = '" + user + "'";
+            string where = " where CardID = '" + card + "' AND UserID = '" + user + "'";
 
             string query = "update " + Table + QueryFields(filters) + where;
             bool success = Database.ExecOverig(query);

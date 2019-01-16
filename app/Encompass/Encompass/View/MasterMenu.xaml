@@ -2,12 +2,13 @@
 <MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Encompass.MasterMenu"
-             xmlns:pages="clr-namespace:Encompass">
+             xmlns:pages="clr-namespace:Encompass"
+                 >
   <MasterDetailPage.Master>
     <pages:MasterMenuMaster x:Name="MasterPage" />
   </MasterDetailPage.Master>
   <MasterDetailPage.Detail>
-    <NavigationPage>
+        <NavigationPage BarBackgroundColor="#F9D492">
       <x:Arguments>
         <pages:CardsPage />
       </x:Arguments>

@@ -15,7 +15,7 @@ namespace API.Services
         ResultDTO<User> Login(FilterDTO filters);
     
         UpdateDTO<User> Update(FilterDTO filters);
-        UpdateDTO<Balance> UpdateCard(FilterDTO filter, int userId);
+        UpdateDTO<Balance> UpdateCard(FilterDTO filter, int cardId, int userId);
         BaseDTO DeleteCard(FilterDTO filters);
     }
 }

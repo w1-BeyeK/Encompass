@@ -14,5 +14,14 @@ namespace Encompass.Models
         public bool Favorite { get; set; }
 
         public Card Card { get; set; }
+
+        public override string ToString()
+        {
+            return $"{Card.Name}, {Card.Company}: {Amount}€";
+        }
     }
+
+   
 }
+
+
